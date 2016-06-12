@@ -46,6 +46,8 @@ Một **function** (hàm) được tạo ra từ những yếu tố sau:
 
 ***Một hàm được định nghĩa thường nhằm để giải quyết một công việc nào đó (có thể thực hiện nhiều lần lặp đi lặp lại). Vì thế, tên hàm nên diễn đạt được tên công việc mà các bạn muốn máy tính thực hiện.***
 
+Thông thường, chúng ta sử dụng động từ để biểu diễn hành động, công việc cần thực hiện. Chúng ta cũng thường sử dụng động từ để đặt tên cho hàm. Ví dụ: moveUp, moveDown, turnLightOn, readFile, ...
+
 - Hàm có thể có giá trị trả về hoặc không có giá trị trả về.
 - Hàm bắt buộc phải có tên, quy tắc đặt tên giống với quy tắc đặt tên biến.
 - Hàm có thể có 1 tham số, nhiều tham số hoặc không có tham số nào.
@@ -174,6 +176,56 @@ Chúng ta có thể xem được **status code** sau khi debug chương trình b
 ![](4.png)
 
 Việc sử dụng từ khóa **return** trong vòng lặp **for** đã giúp mình biết rằng có vấn đề xảy ra bên trong đoạn lệnh đó, như thế mình có thể sửa lỗi dễ dàng hơn.
+
+###Nguyên mẫu hàm (Function prototype)
+
+Trong C++, mọi hàm muốn được sử dụng thì phải có đủ 2 phần: khai báo và định nghĩa. Trong phần khai báo, chúng ta cung cấp cho chương trình tên hàm, kiểu trả về, danh sách tham số đầu vào. Và phần định nghĩa chính là khối lệnh đứng sau phần khai báo hàm.
+
+Ở những ví dụ trên, mình chọn cách vừa khai báo vừa định nghĩa hàm. Bên cạnh đó, C++ còn hổ trợ cho chúng ta tách 2 phần khai báo và định nghĩa ra thành 2 phần riêng biệt. Trong đó, phần khai báo nằm riêng gọi là nguyên mẫu hàm (**function prototype**).
+
+	int add(int value1, int value2); //function prototype
+
+Mình lấy ví dụ trên đây là một function prototype. Phần định nghĩa của hàm này vẫn chưa có, vì vậy, nếu các bạn thực hiện gọi hàm **add(int, int)** thì chương trình sẽ báo lỗi.
+
+#####Định nghĩa cho function prototype
+
+Việc định nghĩa cho nguyên mẫu hàm cần đảm bảo rằng các bạn ghi đúng thông tin các bạn đã cung cấp trong phần khai báo. Phần định nghĩa phải đặt ở đâu đó phía dưới phần khai báo.
+
+	int add(int i1, int i2)
+	{
+		return i1 + i2;
+	}
+
+Vậy là mình vừa định nghĩa xong cho nguyên mẫu hàm **add(int, int)** mà mình vừa khai báo ở trên. Các bạn có thấy điều gì đặc biệt không? Đó chính là trong nguyên mẫu hàm mình đặt tên cho 2 tham số là **value1** và **value2** nhưng khi định nghĩa mình lại đối tên chúng thành **i1** và **i2**. Điều này không quan trọng. **Khi khai báo nguyên mẫu hàm các bạn có thể chưa cần cung cấp tên biến của tham số, mà chỉ cần quan tâm đến kiểu dữ liệu của mỗi tham số.**
+
+	int add(int, int); // receive 2 integer as input
+
+#####Tại sao lại phải sử dụng function prototype?
+
+Việc sử dụng **function prototype** hay không không quan trọng. Điều này là tùy vào mỗi người. Nhưng sử dụng function prototype có thể giúp chương trình của các bạn rõ ràng hơn.
+
+Đặt trường hợp chương trình của bạn có rất nhiều hàm cần được xử lý, thế rồi các bạn định nghĩa hàm tràn lan ra file mã nguồn. Đến khi nhìn lại mã nguồn sẽ rất rối mắt. Thay vào đó, chúng ta khai báo hết các nguyên mẫu hàm cần sử dụng phía trên cùng của file mã nguồn, sau đó phần định nghĩa nằm bên dưới. Lúc cần tìm xem chương trình của chúng ta có những hàm nào, chỉ cần kéo lên trên để xem là được.
+
+Ví dụ:
+
+	float add(float, float);
+	float sub(float, float);
+	void doSomething();
+	//...............
+
+	float add(float f1, float f2) { return f1 + f2; }
+	
+	float sub(float f1, float f2) { return f1 - f2; }
+
+	void doSomeThing()	{ //do something }
+
+#####Phím tắt trong Visual studio 2015 khi thao tác với function prototype
+
+- Để chuyển đến phần định nghĩa của nguyên mẫu hàm, các bạn click chuột trái vào tên hàm của nguyên mẫu hàm và nhấn phím **F12**, Visual studio sẽ tự động di chuyển con trỏ đến phần định nghĩa.
+
+- Trường hợp nguyên mẫu hàm chưa được định nghĩa, con trỏ sẽ không di chuyển đi đâu cả sau khi nhấn phím **F12**. Visual studio 2015 có thể giúp bạn tạo ra mẫu định nghĩa nguyên mẫu hàm tự động bằng cách click chuột trái vào tên hàm của nguyên mẫu hàm, nhấn tổ hợp phím **Ctrl + >** và nhấn **Enter**.
+
+- Ngược lại, nếu các bạn đang ở phần định nghĩa hàm và muốn tìm đến vị trí khai báo nguyên mẫu hàm, các bạn click vào tên hàm của phần định nghĩa và nhấn phím **F12**. Visual studio sẽ chuyển con trỏ đến vị trí nguyên mẫu hàm nếu có.
 
 ###Thử định nghĩa lại một số hàm toán học thông dụng
 
