@@ -199,7 +199,7 @@ Tuổi của A là 15, tuổi của B là 20. Sử dụng các toán tử quan h
 
 ![](2.png)
 
-#####So sánh số thực
+###So sánh số thực
 
 Sử dụng các toán tử so sánh để thực hiện so sánh số thực có thể cho ra kết quả không mong muốn. Ví dụ:
 
@@ -229,6 +229,64 @@ Sử dụng các toán tử so sánh để thực hiện so sánh số thực c�
 	0
 
 Có nghĩa là biểu thức so sánh **(d1 > d2)** là đúng. Trong chương trình trên, d1 = 0.0100000000000005116 và d2 = 0.0099999999999997868. Cả 2 giá trị này đều gần bằng 0.1, nhưng d1 lớn hơn d2 nên đã cho ra kết quả sai. Do đó, chúng nên tránh thực hiện so sánh số thực nếu không cần thiết.
+
+###Toán tử logic (logical operators)
+
+Chúng ta sử dụng các toán tử quan hệ (relational operators) để kiểm tra một biểu thức mệnh đề cụ thể đúng hay sai, nhưng chúng chỉ có thể kiểm tra 1 mệnh đề tại 1 thời điểm. Đôi khi chúng ta cần kiểm tra cùng lúc nhiều mệnh đề trong cùng thời điểm.
+
+Ví dụ: Khi chúng ta muốn kiểm tra thử có trúng vé số hay không, chúng ta cần so khớp nhiều chữ số khác nhau. Nếu tờ vé số có 5 chữ số, chúng ta cần 5 lần so sánh. Điều kiện trúng giải là tất cả các cặp chữ số đều phải khớp với nhau.
+
+Một trường hợp khác, chúng ta cần kiểm tra rằng có ít nhất một mệnh đề trong số các mệnh đề đưa ra là đúng hay không.
+
+Ví dụ: Nếu chúng ta muốn nghỉ làm việc trong hôm nay, phải có ít nhất 1 trong 2 mệnh đề sau đây là đúng. Thứ nhất là "chúng ta bị ốm", thứ hai là "chúng ta đã hoàn thành công việc". Hoặc mệnh đề "chúng ta bị ốm" đúng, hoặc mệnh đề "chúng ta đã hoàn thành công việc" đúng thì chúng ta có thể nghỉ làm việc hôm nay. Nếu chỉ sử dụng các toán tử so sánh, chúng ta phải thực hiện so sánh 2 lần.
+
+***Toán tử logic (logical operators) hổ trợ cho chúng ta kiểm tra nhiều mệnh đề cùng một lúc.***
+
+Ngôn ngữ C++ cung cấp cho chúng ta 3 toán tử logic:
+
+![](3.png)
+
+#####Toán tử NOT
+
+Toán tử NOT kí hiệu là (!) là toán tử một ngôi có chức năng đảo ngược giá trị của biến kiểu **bool**. Khi sử dụng, chúng ta đặt toán tử NOT đứng trước giá trị kiểu **bool** hoặc biến kiểu **bool**.
+
+Ví dụ:
+
+	!true;
+	!false;
+	bool b = false;
+	bool b1 = !b;
+
+Dưới đây là bảng chân trị của toán tử NOT:
+
+![](4.png)
+
+Nếu toán tử NOT tác động đến giá trị True, nó sẽ chuyển thành giá trị False và ngược lại.
+
+#####Toán tử OR
+
+Toán tử OR là một toán tử hai ngôi dùng để kiểm tra một trong hai mệnh đề có đúng hay không. Ví dụ: "Tôi thích chơi game" OR "Tôi thích học lập trình C++". Nếu mệnh đề "Tôi thích chơi game" đúng, hoặc mệnh đề "Tôi thích học lập trình C++" đúng thì toán tử OR trả về kết quả đúng.
+
+![](5.png)
+
+Ví dụ:
+
+	int value = 1;
+	value == 0 || value == 1; // true
+	value == 0 || value == 2; // false
+
+#####Toán tử AND
+
+Toán tử AND là một toán tử hai ngôi dùng để kiểm tra cả hai mệnh đề có đều đúng hay không. Dưới đây là bảng chân trị của toán tử AND:
+
+![](6.png)
+
+Ví dụ:
+
+	int value = 1;
+	value != 0 && value != 2; //true
+	value == 1 && value == 2; //false
+
 
 ##
 ###Tổng kết
