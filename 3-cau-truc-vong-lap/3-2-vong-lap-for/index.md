@@ -95,11 +95,94 @@ Kết quả in ra sẽ là:
 
 	10 8 6 4 2 0
 
+#####Multiple declarations
+
+Trong một số trường hợp, vòng lặp của chúng ta cần sử dụng đồng thời nhiều biến khác nhau. Ngôn ngữ C++ hổ trợ cho chúng ta khai báo và khởi tạo nhiều biến bên trong phần **variable initialization** của vòng lặp **for**.
+
+	for (int hh = 0, mm = 0, ss = 0 ; true; ss++)
+	{
+		if (ss >= 60)
+		{
+			ss = 0;
+			mm++;
+			if (mm >= 60)
+			{
+				hh++;
+				if (hh >= 24)
+				{
+					hh = 0;
+				}
+			}
+		}
+
+		cout << hh << ":" << mm << ":" << ss << endl;
+
+		_sleep(1000);
+		system("cls");
+	}
+
+Nếu các bạn đặt khai báo biến vòng lặp tại phần **variable initialization** của vòng lặp **for**, những biến này phải có cùng kiểu dữ liệu.
+
+#####Lược bỏ một số thành phần trong vòng lặp for
+
+Một đặc điểm nổi bật hơn so với các vòng lặp khác là vòng lặp for cho phép lập trình viên lược bỏ các thành phần nếu không cần sử dụng. Ví dụ:
+
+	int loop = 0
+	for ( ; loop <= 10; )
+	{
+		cout << loop++ << " ";
+	}
+
+Trong ví dụ trên, mình không cần sử dụng tới thành phần khởi tạo biến, cũng như thành phần cập nhật giá trị biến. Lúc này, vòng lặp này hoàn toàn giống với vòng lặp **while**.
+
+Chúng ta có thể lược bỏ luôn cả 3 thành phần cơ bản của vòng lặp for:
+
+	for ( ; ; )
+	{
+		// do something
+	}
+
+Khi biểu thức điều kiện trong for được bỏ trống, nó đồng nghĩa với việc biểu thức điều kiện luôn luôn đúng. Vòng lặp for này tương đương:
+
+	while (true)
+	{
+		// do something
+	}
+
+#####Nesting for loops
+
+Tương tự như vòng lặp **while** hay **do-while**, vòng lặp **for** có thể chứa nhiều vòng lặp khác trong khối lệnh của nó.
+
+	for (int i = 0; i < 5; i++)
+	{
+		for(int j = 0; j < 10; j++)
+		{
+			cout << "* ";
+		}
+		cout << endl;
+	}
+
+Kết quả của đoạn code này là:
+
+	* * * * * * * * * * 
+	* * * * * * * * * * 
+	* * * * * * * * * * 
+	* * * * * * * * * * 
+	* * * * * * * * * * 
+
 ---------------------
 
 ###Tổng kết
 
+Vòng lặp **for** được sử dụng phần lớn trong các cấu trúc lặp trong ngôn ngữ C++ mà mình đã giới thiệu đến các bạn. Vòng lặp **for** phù hợp cho cả trường hợp biết trước số lần lặp lẫn không biết trước số lần lặp.
+
 ###Bài tập cơ bản
+
+1/ Viết chương trình tính giai thừa của một số nguyên n nhập từ bàn phím.
+
+2/ Viết chương trình tính dân số của một thành phố sau 10 năm nữa, biết rằng dân số hiện tại là 500.000 người, và tỉ lệ tăng dân số hằng năm của thành phố này là 1.6%.
+
+3/ Viết chương trình in ra bảng cửu chương.
 
 --------------------------------------
 
