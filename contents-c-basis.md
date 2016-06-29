@@ -2,12 +2,12 @@
 
 ### Giới thiệu tổng quan khóa học
 
-- Giới thiệu về series tutorial này
-- Giới thiệu về ngôn ngữ lập trình
-- Giới thiệu về C++
-- Giới thiệu về các công đoạn phát triển chương trình C++
-- Giới thiệu về môi trường phát triển (IDE) chương trình C++
-- Hướng dẫn cài đặt visual studio 2015 làm môi trường phát triển ứng dụng
+- **Giới thiệu về series tutorial này**
+- **Giới thiệu về ngôn ngữ lập trình**
+- **Giới thiệu về C++**
+- **Giới thiệu về các công đoạn phát triển chương trình C++**
+- **Giới thiệu về môi trường phát triển (IDE) chương trình C++**
+- **Hướng dẫn cài đặt visual studio 2015 làm môi trường phát triển ứng dụng**
 
 > Keyword: Biên dịch (compile)
 
@@ -36,14 +36,10 @@
 
 ### Cấu trúc rẽ nhánh (Conditional statement)
 
-- **Bool & biểu thức điều kiện, biễu diễn dưới dạng sơ đồ khối**
-- **Toán tử quan hệ - logic**
-- **Cấu trúc if (thiếu)**
-- **Cấu trúc if (đủ)**
-- **Cách dùng cấu trúc if khác (if...else if ..., cấu trúc if lồng nhau)**
-- Luyện tập
-- Sửa bài tập
-- **Cấu trúc switch...case**
+- **Bool & Toán tử quan hệ - logic**
+- **Giới thiệu một số cấu trúc điều khiển**
+- **Câu lệnh if**
+- **Câu lệnh switch**
 - Luyện tập
 - Sửa bài tập
 - Những lỗi thường gặp
@@ -51,13 +47,9 @@
 
 ### Cấu trúc vòng lặp (Loop statement)
 
-- **Biễu diễn dưới dạng sơ đồ khối**
 - **Vòng lặp while**
-- Luyện tập vòng lặp while
 - **Vòng lặp do - while**
-- Luyện tập vòng lặp do - while
 - **Vòng lặp for**
-- Luyện tập vòng lặp for
 - **Break & Continue**
 - Lồng các vòng lặp
 - Bài tập kết hợp 3 chương
@@ -84,8 +76,8 @@
 - **Thư viện array trong STL**
 - Luyện tập về mảng 1 chiều
 - Sửa bài tập mảng 1 chiều
-- Mảng 2 chiều (Cách khai báo, tổ chức bộ nhớ, truy xuất phần tử...)
-- Các thao tác cơ bản với mảng 2 chiều
+- **Mảng 2 chiều (Cách khai báo, tổ chức bộ nhớ, truy xuất phần tử...)**
+- **Các thao tác cơ bản với mảng 2 chiều**
 - Luyện tập về mảng 2 chiều
 - Sửa bài tập mảng 2 chiều
 - Những vấn đề thường gặp
@@ -105,13 +97,14 @@
 - Những vấn đề thường gặp khi thao tác với chuỗi kí tự
 - Bài tập trắc nghiệm
 
-### Cơ bản về Hàm (function)
+### Hàm (function)
 
 - **Làm quen với khái niệm Function**
 - **Thiết kế chương trình dựa trên khái niệm Function**
-- Truyền đối số cho hàm
-- Hàm có tham số mặc định, hàm có tham số hằng
-- Nạp chồng hàm
+- **Truyền đối số cho hàm là giá trị, tham chiếu**
+- **Hàm có giá trị trả về là giá trị, tham chiếu**
+- **Hàm có tham số mặc định, hàm có tham số hằng**
+- **Nạp chồng hàm**
 - Luyện tập
 - Sửa bài tập
 - Những vấn đề thường gặp
@@ -136,9 +129,9 @@
 > Keyword: Mảng động (dynamic array), toán tử tăng/giảm
 > (increment/decrement operator)
 
-### Nâng cao về hàm
+### Hàm và con trỏ
 
-- Truyền đối số cho hàm bằng con trỏ
+- Truyền đối số cho hàm là địa chỉ
 - Hàm có kiểu trả về là con trỏ
 - Con trỏ hàm
 - Luyện tập
