@@ -169,7 +169,7 @@ Ví dụ:
 
 ###Tổng kết
 
-Trong bài học này, chúng ta đã cùng tìm hiểu về một cách tổ chức dữ liệu mới trên máy tính. Mảng hai chiều được sử dụng khá phổ biến để giải quyết một số thuật toán yêu cầu tối ưu như Quy Hoạch Động, bài toán đồ thị, ... Cũng có thể được sử dụng trong việc thiết kế một số trò chơi đơn giản. Chúng ta sẽ còn ứng dụng nhiều về mảng hai chiều trong các bài học sau.
+Trong bài học này, chúng ta đã cùng tìm hiểu về một cách tổ chức dữ liệu mới trên máy tính. Mảng hai chiều được sử dụng khá phổ biến để giải quyết một số thuật toán yêu cầu tối ưu như Quy Hoạch Động, bài toán đồ thị, ... Cũng có thể được sử dụng trong việc thiết kế một số trò chơi đơn giản, ví dụ game Minesweeper. Chúng ta sẽ còn ứng dụng nhiều về mảng hai chiều trong các bài học sau.
 
 ###Bài tập cơ bản
 
