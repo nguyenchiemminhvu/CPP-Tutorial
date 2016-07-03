@@ -119,7 +119,9 @@ Trong trường hợp này, không có phiên bản hàm print(char), và cũng 
 ##
 ###Tổng kết
 
-Kỹ thuật Function overloading có thể khiến chương trình trở nên phức tạp và nguy hiểm khi để C++ ép kiểu tự động. 
+Kỹ thuật Function overloading có thể khiến chương trình trở nên phức tạp và nguy hiểm khi để C++ ép kiểu tự động. Do đó, chúng ta nên tìm cách đặt tên hàm sao cho phù hợp thay vì tận dụng khả năng overloading của ngôn ngữ C++.
+
+---------------------------------
 
 **Hẹn gặp lại các bạn trong bài học tiếp theo trong khóa học lập trình C++ hướng thực hành.**
 
