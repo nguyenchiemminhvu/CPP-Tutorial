@@ -59,7 +59,7 @@ Chúng ta thấy qua 2 lần chạy chương trình thì địa chỉ của bi�
 
 **Địa chỉ của biến được định dạng theo hệ cơ số 16 chứ không phải hệ thập phân như chúng ta thường thấy.**
 
-###Một số tác dụng khác của toán tử tham chiếu (reference operator)
+###Tham chiếu (Reference)
 
 Một tham chiếu (**reference**) trong ngôn ngữ C++ cũng là một kiểu dữ liệu cơ bản, nó hoạt động như một tên giả của biến nó tham chiếu đến.
 
@@ -135,7 +135,7 @@ Lúc này, biến var và biến var_reference vẫn là 2 tên biến khác nha
 	const int32_t var = 10;
 	int32_t & ref = var;
 
-Vì biến tham chiếu ```ref``` có thể thay đổi giá trị vùng nhớ, nhưng lúc này, ```var``` là hằng số nên giá trị vùng nhớ không được phép thay đổi. Điều này dẫn đến xung đột nên compiler ngăn chặn chúng ta biên dịch chương trình.
+Vì biến tham chiếu ```ref``` có thể thay đổi giá trị bên trong vùng nhớ, nhưng lúc này, ```var``` là hằng số nên giá trị vùng nhớ không được phép thay đổi. Điều này dẫn đến xung đột nên compiler ngăn chặn chúng ta biên dịch chương trình.
 
 Nhưng chúng ta có thể tham chiếu một biến tham chiếu hằng số đến một hằng số.
 
@@ -154,6 +154,8 @@ Chúng ta có thể thực hiện nhiều lần tham chiếu đến nhiều bi�
 	cout << "Current value of ref: " << ref << endl; //20
 
 Ngay khi thực hiện tham chiếu đến ```i_value2```, mọi hành vi thay đổi giá trị trên ```ref``` sẽ không còn ảnh hưởng đến ```i_value1```.
+
+***Lưu ý: Biến tham chiếu chỉ có thể tham chiếu một lần duy nhất ngay khi khai báo và khởi tạo. Chúng ta không thể tham chiếu đến biến có địa chỉ khác sau khi đã khởi tạo.***
 
 ##
 ###Tổng kết
