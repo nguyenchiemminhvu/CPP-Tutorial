@@ -15,7 +15,7 @@ Ví dụ:
 
 Như vậy, chúng ta hiểu rằng có một cấu trúc vòng lặp được đặt tại B, nó có thể bắt buộc chương trình thực hiện công việc B 1 lần, hoặc cũng có thể thực hiện công việc B vô số lần mà không thể chuyển sang thực hiện công việc C sau đó. Số lần thực hiện công việc B nó sẽ phụ thuộc vào biểu thức điều kiện được đặt trong cấu trúc vòng lặp.
 
-Mình lấy một ví dụ trong đời sống hằng ngày. Sinh viên A đăng kí học môn lập trình C++ tại trường đại học, nếu sinh viên A không đủ điểm để qua môn học này thì sinh viên A sẽ phải học lại. Trong trường hợp sinh viên A phải học lại lần thứ 2, chúng ta lại nói rằng nếu sinh viên A không đủ điểm qua môn học này thì sinh viên A phải học lại... Vậy việc sinh viên A học lại là công việc sẽ được lặp đi lặp lại nhiều lần trong khi điều kiện sinh viên A đủ điểm để qua môn vẫn còn sai.
+Mình lấy một ví dụ trong đời sống hằng ngày. *Sinh viên A đăng kí học môn lập trình C++ tại trường đại học, nếu sinh viên A không đủ điểm để qua môn học này thì sinh viên A sẽ phải học lại. Trong trường hợp sinh viên A phải học lại lần thứ 2, chúng ta lại nói rằng nếu sinh viên A không đủ điểm qua môn học này thì sinh viên A phải học lại... Vậy việc sinh viên A học lại là công việc sẽ được lặp đi lặp lại nhiều lần trong khi điều kiện sinh viên A đủ điểm để qua môn vẫn còn sai.*
 
 ![](0.png)
 

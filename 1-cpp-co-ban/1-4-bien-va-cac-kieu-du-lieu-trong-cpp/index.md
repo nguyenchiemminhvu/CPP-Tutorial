@@ -30,7 +30,7 @@ Hai lựa chọn này khác nhau như thế nào? Có thể hiểu  build chươ
 
 Khái niệm **biến** (variable) ra đời đã giải quyết được rất nhiều mặt hạn chế trong các chương trình mà các bạn đã viết trong các bài học trước. Ví dụ với chương trình tính kết quả biểu thức chứa 2 số nguyên, các bạn phải viết một vài dòng lệnh, biên dịch chương trình, chạy chương trình để in ra kết quả. Sau đó thì sao? Khi bạn muốn tính kết quả của phép tính trên với 2 giá trị khác, các bạn lại phải viết lại một vài dòng lệnh, và thực hiện quá trình trên lặp đi lặp lại.
 
-Đây không phải là lập trình! Người viết chương trình phải đảm bảo chương trình sau khi viết ra phải có tính tổng quát, nghĩa là chương trình đó phải giải được một bài toán nào đó với nhiều giá trị đầu vào khác nhau mà không phải thay đổi bất kỳ đoạn code nào bên trong.
+**Đây không phải là lập trình!** Người viết chương trình phải đảm bảo chương trình sau khi viết ra phải có tính tổng quát, nghĩa là chương trình đó phải giải được một bài toán nào đó với nhiều giá trị đầu vào khác nhau mà không phải thay đổi bất kỳ đoạn code nào bên trong.
 
 Để tiết kiệm thời gian cho việc này, chúng ta sẽ sử dụng **biến** (variable) để lưu trữ giá trị cần xử lý.
 
@@ -75,7 +75,7 @@ Với cách khai báo 3:
 
 ![Hình 1.4.6](6.png)
 
-Sau đây là cú pháp cơ bản để chúng ta khai báo 1 biến:
+**Sau đây là cú pháp cơ bản để chúng ta khai báo 1 biến:**
 
 	<Kiểu dữ liệu> <Tên biến> = [Giá trị khởi tạo của biến];
 		

@@ -184,7 +184,11 @@ Vậy tại sao lại cần 4 bytes cho một con trỏ trong hệ điều hành
 
 Phạm vi giá trị của ```unsigned __int32``` là từ 0 đến 4294967295, phạm vi giá trị này đủ để đánh dấu địa chỉ tất cả ô nhớ trong **Virtual memory** của nền tảng hệ điều hành **32 bits**. Tương tự, phạm vi giá trị của ```unsigned __int64``` là tử 0 đến 18446744073709551615, đủ để đánh dấu địa chỉ của tất cả ô nhớ trong **Virtual memory** của nền tảng hệ điều hành **64 bits**.
 
-Một biến, hoặc một vùng nhớ khi được đưa vào sử dụng sẽ có địa chỉ thuộc phạm vi giá trị của kiểu unsigned int (tùy vào mỗi nền tảng hệ điều hành) mà mình kể trên, nằm trên **Virtual memory**. Và kích thước bộ nhớ của con trỏ được cấp phát vừa đủ để chứa địa chỉ ảo của biến hoặc vùng nhớ đó.
+Dưới đây là thông tin Virtual memory trên máy tính của mình:
+
+![](virtual_memory.png)
+
+Dung lượng bộ nhớ ảo hiện tại của máy mình là **1960MB**, tương đương với **2055208960 bytes**. Trong khi đó, con trỏ trong nền tảng hệ điều hành **32 bits** có kích thước **4 bytes**, giá trị địa chỉ lớn nhất mà con trỏ **4 bytes** có thể lưu trữ được là **4294967295**, nên nó đủ để lưu trữ bất kì địa chỉ của biến nào được cấp phát trên bộ nhớ ảo.
 
 #####Gán giá trị cho con trỏ
 

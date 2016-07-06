@@ -167,6 +167,10 @@ Nhưng chúng ta nên tránh khai báo biến bên trong case statement, nó s�
 
 Vậy là chúng ta đã làm quen thêm một dạng cấu trúc rẽ nhánh có điều kiện khác. If statement được sử dụng khi muốn kiểm tra tính đúng sai của một hoặc một số mệnh đề. Switch case statement được sử dụng khi muốn kiểm tra một giá trị số nguyên. Đối với trường hợp số lượng biểu thức điều kiện cần so sánh là quá nhiều, chúng ta ưu tiên sử dụng **switch case statement** hơn vì cú pháp rõ ràng hơn.
 
+Chúng ta có thể biểu diễn cấu trúc của **switch case statement** dưới dạng sơ đồ khối như sau:
+
+![](0.png)
+
 ###Bài tập cơ bản
 
 Viết chương trình nhập vào tháng, in ra tháng đó có bao nhiêu ngày.
